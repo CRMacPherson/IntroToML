@@ -10,18 +10,20 @@ The notebook is in support of a presentation, not the replacement (so I do not w
 - Torch seen as numpy: `Ndarray` -> `Tensor`
 	- Why: Tensor itself has backprop information
 - Key Concepts and associated Classes: 
-    - brief recap of python concepts needed: `tuple`, `[ ]` implementation, `len`
+    - brief recap of python concepts needed: `tuple`, `[ ]` implementation, `len`, `Callable`
     - `DataSet` -> `__getitem__`, `__len__`
     - `DataLoader` -> Loop over `Dataset` in certain ways
-    - Model formulation -> `Module`
+    - Model formulation -> `Module` as a `Callable`
     - Optimizers -> `SGD`
-    - loss functions 
+    - loss functions
 
 - plan:
-    * Start by makig dataloaders for validaiton + training. Simple exercise
-    * Define a simple linear regression, then a feed-forward network
+    * Start by makig a Dataset and one DataLoader. 
+    * hint on `DataLoader`s for validaiton + training. 
+    * Define a simple linear regression
     * Do one step with `Dataloder` + model and see what comes out
-    * Do it a loop
+    * Do it in a loop
+    * Define a feed-forward network as an exercise
 
 - options: How to formulate a Logistic Regression?
 
